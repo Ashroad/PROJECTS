@@ -1,0 +1,276 @@
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.wrap {
+  text-align: center;
+}
+*/
+.item {
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  min-height: 460px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 20px;
+}
+
+.color3 {
+  background-color: inherit;
+}
+
+#OctoEast3 {
+
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 6px;
+  font-weight: bolder;
+  color: gray;
+  font-size: 28px;
+  position: relative;
+  text-shadow: 3 3 3px #676767;
+  padding-bottom: 3px;
+  overflow: hidden;
+}
+#OctoEast3 span {
+  display: inline-block;
+  transform: rotate3d(0, 1, 0, 360deg);
+  perspective: 1000px;
+  transition: transform 0.5s;
+  color: rgb(71,71,165);
+  font-family: cursive;
+}
+#OctoEast3:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  position: absolute;
+  left: 259px;
+  background-color: #333;
+  transition: left 0.2s;
+}
+#OctoEast3:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  position: absolute;
+  left: -100px;
+  background-color: #000;
+  transition: left 0.2s;
+}
+#OctoEast3:hover {
+  color: rgb(65,71,165);
+}
+#OctoEast3:hover > span {
+  color: #000;
+  transform: rotate3d(0, 0, 0, 0deg);
+}
+#OctoEast3:hover:before {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  position: absolute;
+  left: 505px;
+  background-color: #333;
+  transition: left 0.2s;
+}
+#OctoEast3:hover:after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 4px;
+  bottom: 0;
+  position: absolute;
+  left: 259px;
+  background-color: #000;
+  transition: left 0.2s;
+}
+
+.color1 {
+  background-color: #bad2de;
+}
+
+#OctoEast1 {
+  cursor: pointer;
+  font-family: 'Ramabhadra', sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  letter-spacing: 6px;
+  color: #96b112bb;
+  padding: 20px 0;
+  overflow: hidden;
+}
+#OctoEast1:hover #s1 {
+  color: #fff;
+}
+#OctoEast1:hover #s1:before {
+  top: 170px;
+}
+#OctoEast1:hover #s2 {
+  color: #000;
+}
+#OctoEast1:hover #s2:before {
+  top: -170px;
+}
+#OctoEast1 #s1, #OctoEast1 #s2 {
+  position: relative;
+  transition: color .5s;
+}
+#OctoEast1 #s1:before, #OctoEast1 #s2:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: top .3s;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+#OctoEast1 #s1:before {
+  background-color: #fff;
+  top: -170px;
+}
+#OctoEast1 #s2:before {
+  background-color: #000;
+  top: 170px;
+}
+
+.color2 {
+  border: 5px solid #000;
+}
+
+#walter {
+  cursor: pointer;
+  font-family: 'Amiri', serif;
+  font-size: 120px;
+  letter-spacing: 6px;
+  color: #767676;
+  position: relative;
+  padding-top: 20px;
+  overflow: hidden;
+  transition: color 1s;
+}
+#walter:before, #walter:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  left: -101%;
+  transition: left 1s;
+}
+#walter:before {
+  margin-top: -20px;
+}
+#walter:after {
+  bottom: 0;
+}
+#walter span {
+  display: inline-block;
+  transform: rotate3d(0, 1, 0, 0deg);
+  transition: transform .5s;
+}
+#walter span:nth-child(1) {
+  transition-delay: .5s;
+}
+#walter span:nth-child(2) {
+  transition-delay: .4s;
+}
+#walter span:nth-child(3) {
+  transition-delay: .3s;
+}
+#walter span:nth-child(4) {
+  transition-delay: .2s;
+}
+#walter span:nth-child(5) {
+  transition-delay: .1s;
+}
+#walter span:nth-child(6) {
+  transition-delay: 0s;
+}
+#walter:hover {
+  color: #000;
+}
+#walter:hover span {
+  transform: rotate3d(0, 1, 0, 360deg);
+}
+#walter:hover span:nth-child(1) {
+  transition-delay: 0s;
+}
+#walter:hover span:nth-child(2) {
+  transition-delay: .1s;
+}
+#walter:hover span:nth-child(3) {
+  transition-delay: .2s;
+}
+#walter:hover span:nth-child(4) {
+  transition-delay: .3s;
+}
+#walter:hover span:nth-child(5) {
+  transition-delay: .4s;
+}
+#walter:hover span:nth-child(6) {
+  transition-delay: .5s;
+}
+#walter:hover:before, #walter:hover:after {
+  left: 0;
+}

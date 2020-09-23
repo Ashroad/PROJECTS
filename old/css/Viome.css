@@ -1,0 +1,43 @@
+h1 {
+
+    font: "Lucida Sans Unicode Regular";
+    color: #3d3d3d;
+    letter-spacing: 4px;
+    font-size: 100px !important;
+    text-align: center
+}
+
+button {
+    margin: 10px;
+    padding-top: 15px;
+    text-align: center;
+    height: 100%;
+    width: auto;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom-left-radius: 20px 20px;
+    border-top-left-radius: 20px 20px;
+    border-bottom-right-radius: 20px 20px;
+    border-top-right-radius: 20px 20px;
+    font-family: "Lucida Sans Unicode Regular";
+    font-weight: bolder;
+    transition: color 0.8s ease-out
+}
+
+button.outline {
+    border: solid 2px rebeccapurple
+}
+
+button:hover {
+    color: white
+}
+
+.btn {
+    background-color: inherit;
+    transition: background-color 0.8s ease-out
+}
+
+.btn:hover {
+    background-color: rebeccapurple
+}
